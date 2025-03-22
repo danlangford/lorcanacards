@@ -1,26 +1,21 @@
 # Lorcana Cards
 
-This project contains two scripts for managing and searching Lorcana card images.
+Scripts for downloading and searching Lorcana card images.
+Fuzzy search card titles and copy the bast match to card.jpg where OBS can reference it to show on stream.
+Allows for rapid replacement of an on stream card. 
 
 ## Scripts
 
 ### 1. `downloadall.js`
 
-This script downloads all Lorcana card images listed in the `allCards.json` file. It performs the following tasks:
-
-- Checks if the `work` directory exists and creates it if it doesn't.
-- Downloads the `allCards.json` file if it doesn't exist or if it was not written today.
-- Creates an `images` directory inside the `work` directory if it doesn't exist.
-- Downloads each card image listed in the `allCards.json` file and saves it in the `images` directory.
+- Downloads/updates `allCards.json` from LorcanaJson.org.
+- Downloads each card image.
 - Displays a progress bar to show the download progress.
 - Checks for gaps in the filename sequence and logs any missing files.
 
 ### 2. `search.js`
 
-This script allows you to search for Lorcana cards by name and updates a display image with the matched card. It performs the following tasks:
-
-- Loads the `allCards.json` file from the `work` directory.
-- Creates a `display` directory inside the `work` directory if it doesn't exist.
+- Loads the `allCards.json` file.
 - Prompts the user to enter a card name to search for.
 - Uses fuzzy matching to find the best matches for the entered card name.
 - Updates the display image with the matched card's image.
