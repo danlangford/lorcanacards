@@ -46,3 +46,7 @@ npm run downloadall
 ```sh
 npm run search
 ```
+
+## Disclaimer
+
+While the logic, approach, and patterns are my own, I did use GitHub Copilot for authoring portions of the code.
